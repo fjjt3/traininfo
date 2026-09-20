@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: traininfo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/traininfo
+    username: traininfo_user
+    password: traininfo_password
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when_authorized

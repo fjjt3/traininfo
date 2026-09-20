@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: traininfo-db
+    environment:
+      POSTGRES_DB: traininfo
+      POSTGRES_USER: traininfo_user
+      POSTGRES_PASSWORD: traininfo_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U traininfo_user -d traininfo"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
