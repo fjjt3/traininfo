@@ -34,4 +34,4 @@
 
 ## Code style
 
-- When writing or reviewing code, apply the repo-local clean-code skill: `.opencode/skills/backend-dev/SKILL.md` (Uncle Bob, all languages).
+- When writing or reviewing code, apply the project-local clean-code skill: `.github/skills/clean-code/SKILL.md` (Uncle Bob, all languages).
