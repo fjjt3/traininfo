@@ -13,14 +13,14 @@ _Completed features, in implementation order._
 
 _Next feature to address. Ideally only one feature in progress at a time._
 
-3. **002 · Station Catalog** — REST API to query and search train stations stored in PostgreSQL.
+3. **002 · Real Fare Provider Integration** — Integrate one officially supported provider after verifying its API, access terms, route coverage, and required journey inputs. The specification is proposed and not ready for implementation until the provider-selection gate is complete.
 
 ## Backlog / Ideas 💡
 
 _Ideas aligning with the constitution, pending prioritization._
 
 - **Origin-Destination Schedule Search** — Query available train journeys between two stations for a given date.
-- **Real Operator Fare Integration** — Replace or complement demo offers with supported real-provider fares, documenting source, availability, and freshness; booking and payment remain out of scope.
+- **Station Catalog** — REST API to query and search train stations stored in PostgreSQL.
 - **GTFS Static Ingestor** — Parser and importer for Adif GTFS static datasets into PostgreSQL.
 - **Real-time Updates (GTFS-RT)** — Track and stream delays, platform changes, and service incidents.
 - **Angular Web Frontend** — SPA client for interactive timetable navigation and, when prioritized, the journey and fare comparison experience.
